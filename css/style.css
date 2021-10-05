@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow semi condensed";
+  font-size: 13px;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.outer-container {
+  margin: 5% auto;
+  width: 90%;
+}
+
+.inner-container {
+  display: grid;
+  grid-template-areas:
+    "box1 box1 box1 box1 box2 box5"
+    "box3 box4 box4 box4 box4 box5 ";
+  grid-gap: 20px;
+}
+
+.info {
+  display: flex;
+}
+
+.photo {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 45px;
+  height: 45px;
+}
+
+.name {
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.user1{
+    color: hsl(0, 0%, 81%);
+}
+
+.education1{
+    color: hsl(0, 0%, 81%);
+    opacity: 50%;
+}
+
+.education2{
+    opacity: 50%;
+}
+
+.my-experience1{
+    color: #fff;
+}
+
+.review1{
+    color: hsl(0, 0%, 81%);
+    opacity: 70%;
+    padding-top:20px ;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.review2{
+    opacity: 70%;
+    line-height: 1.5;
+    padding-top:20px ;
+    font-size: 15px;
+}
+.box1 {
+  background-color: hsl(263, 55%, 52%);
+  grid-area: box1;
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 80% 0;
+}
+
+.box2 {
+  background-color: hsl(217, 19%, 35%);  
+  grid-area: box2;
+}
+
+.box3 {
+  background-color: hsl(0, 0%, 100%);
+  grid-area: box3;
+}
+.box4 {
+  background-color: hsl(219, 29%, 14%);
+  grid-area: box4;
+}
+.box5 {
+  background-color: hsl(0, 0%, 100%);
+  grid-area: box5;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+  padding: 22px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .inner-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
